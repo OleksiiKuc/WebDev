@@ -3,88 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Біографія</title>
-    <style>
-        h1 {
-            font-size: 22px;
-            text-align: center;
-        }
-        .back__link {
-            font-style: italic;
-            text-decoration: none;
-        }
-        .back__link:hover {
-            text-decoration: underline;
-        }
-        h3 {
-            text-align: center;
-        }
-        .btn__link {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 3px;
-            width: 200px;
-            color: #42c323;
-
-            text-decoration: none;
-
-            background-color: #322d85;
-            border: 2px solid #000000;
-            border-radius: 20px;
-            padding: 2px 4px;
-
-            transition: background-color .2s linear;
-        }
-        .btn__link:hover {
-            background-color: #ae1abe;
-            color: #37c69d;
-        }
-        .article p{
-            font-size: 1.2em;
-        }
-        .article h2 {
-            font-size: 2em;
-        }
-        .article__basic p{
-            background-color: #cccccc;
-        }
-        .article__child p{
-            background-color: #a0a0a0;
-            color: #2f45b1;
-        }
-        .article__school p{
-            background-color: #707070;
-            color: #d4c120;
-        }
-        .article__afterSchool p{
-            background-color: #5b5b5b;
-            color: #10e52b;
-        }
-        .article__university p{
-            background-color: #3c3c3c;
-            color: #fff;
-        }
-        .back-content__link {
-            font-weight: bold;
-        }
-        .back-top__link {
-            text-transform: uppercase;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Автобіографія Кучер Олексій Степанович</h1>
+    <h1 class="biography__title">Автобіографія Кучер Олексій Степанович</h1>
     <a class="back__link" href="index.html">Повернутись назад</a>
-    <h3 id="content">Зміст:</h3>
+    <h3 class="biography__subtitle" id="content">Зміст:</h3>
     <ol>
-        <li><a class="btn__link" href="#basic">Базова інформація</a></li>
-        <li><a class="btn__link" href="#child">Дитинство</a></li>
-        <li><a class="btn__link" href="#school">Шкільні роки</a></li>
-        <li><a class="btn__link" href="#afterSchool">Поза школою</a></li>
-        <li><a class="btn__link" href="#university">Університет</a></li>
+        <li><a class="biography-btn__link" href="#basic">Базова інформація</a></li>
+        <li><a class="biography-btn__link" href="#child">Дитинство</a></li>
+        <li><a class="biography-btn__link" href="#school">Шкільні роки</a></li>
+        <li><a class="biography-btn__link" href="#afterSchool">Поза школою</a></li>
+        <li><a class="biography-btn__link" href="#university">Університет</a></li>
     </ol>
     <hr>
-    <div class="article">
-        <article class="article__basic" id="basic">
+    <div class="biography__article">
+        <article class="biography-article__basic" id="basic">
             <h2>1. Базова інформація:</h2>
             <p>
                 Ім'я: Олексій <br>
@@ -95,7 +29,7 @@
             <a class="back-content__link" href="#content">До змісту</a>
         </article>
 
-        <article class="article__child" id="child">
+        <article class="biography-article__child" id="child">
             <h2>2. Дитинство:</h2>
             <p>
                 Народився 28.01.2001 в селищі Нова Каховка. Але до 3 років проживав в Запоріжжі. Я нічого не пам'таю звідти. Коли переїхав сюда, мене покусала
@@ -108,7 +42,7 @@
             <a class="back-content__link" href="#content">До змісту</a>
         </article>
 
-        <article class="article__school" id="school">
+        <article class="biography-article__school" id="school">
             <h2>3. Шкільні роки:</h2>
             <p>
                 Ну в школі я був крутий чєл. В першому класі я дружив зі всіма. в 3 класі я навчився грати в шахмати, і перемагав всіх однокласників.
@@ -121,7 +55,7 @@
             <a class="back-content__link" href="#content">До змісту</a>
         </article>
 
-        <article class="article__afterSchool" id="afterSchool">
+        <article class="biography-article__afterSchool" id="afterSchool">
             <h2>4. Поза школою:</h2>
             <p>
                 Ну шо я можу тут розказати. До класу 8 я цілий день пропадав з другом на дворі, ми грали футбол. Бувало ще частенько, що ми були в гостях
@@ -132,18 +66,18 @@
             <a class="back-content__link" href="#content">До змісту</a>
         </article>
 
-        <article class="article__university" id="university">
+        <article class="biography-article__university" id="university">
             <h2>5. Університет:</h2>
             <p>
                 Прийшов, походив 1 з половиною рік. Тепер сиджу дома, університетські роки проходять класно (ні). Пару раз був в гуртожитку, більше туда
                 не вернусь (хіба закличуть). <br>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <a class="back-content__link" href="#content">До змісту</a>
+            <a class="biography-back-content__link" href="#content">До змісту</a>
         </article>
 
     </div>
     <hr>
-    <a class="back-top__link" href="#top">Уверх</a>
+    <a class="biography-back-top__link" href="#top">Уверх</a>
 </body>
 </html>

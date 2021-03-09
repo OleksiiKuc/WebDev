@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Сьогодення</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        h1, h2 {
+        .novadays__title, .novadays__subtitle {
             text-align: center;
         }
-        h1 {
+        .novadays__title {
             font-size: 22px;
         }
         .back__link {
             font-style: italic;
             text-decoration: none;
         }
-        ul li:nth-child(odd) {
+        .novadays__ul-list li:nth-child(odd) {
             background-color: #ccc;
         }
-        .list li:nth-child(3) {
+        .novadays__ol-list li:nth-child(3) {
             cursor: pointer;
         }
-        .list li:nth-child(5) {
+        .novadays__ol-list li:nth-child(5) {
             cursor: pointer;
         }
-        .list li:nth-child(4) {
+        .novadays__ol-list li:nth-child(4) {
             background-color: #524f94;
             color: #d4c120;
         }
     </style>
 </head>
 <body>
-<h1>Сьогодення Кучер Олексій Степанович</h1>
+<h1 class="novadays__title">Сьогодення Кучер Олексій Степанович</h1>
 <a class="back__link" href="index.html">Повернутись назад</a>
-<h2>Мій типовий список покупок:</h2>
-<ul>
+<h2 class="novadays__subtitle">Мій типовий список покупок:</h2>
+<ul class="novadays__ul-list">
     <li>Риба</li>
     <li>М'ясо</li>
     <li>Яйця</li>
@@ -65,8 +66,8 @@
         </ul>
     </li>
 </ul>
-<h2>Мій улюблений десерт</h2>
-    <ol class="list">
+<h2 class="novadays__subtitle">Мій улюблений десерт</h2>
+    <ol class="novadays__ol-list">
         <li>Очищуємо персики</li>
         <li>Викладаємо на пательну</li>
         <li>Посипаємо цукром</li>

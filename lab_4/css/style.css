@@ -1,0 +1,328 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.back__link {
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* Index
+******************************/
+.index__title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.index__text {
+    font-size: 1.2em;
+}
+.index__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.index__link {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    color: #7c79ce;
+    width: 25%;
+    /*margin-left: 10px;*/
+}
+.index__link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #7c79ce;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+
+    transition: width .4s linear;
+}
+.index__link:hover::after {
+    color: #524f94;
+    width: 100%;
+}
+.index__link:visited {
+    color: #246f72;
+}
+
+/* Biography
+******************************/
+.biography__title {
+    font-size: 22px;
+    text-align: center;
+}
+.biography-back__link:hover {
+    text-decoration: underline;
+}
+.biography__subtitle {
+    text-align: center;
+}
+.biography__article {
+    display: flex;
+    flex-wrap: wrap;
+}
+.biography__articles-item {
+    margin-bottom: 10px;
+    width: 33%;
+}
+.biography__articles-item + .biography__articles-item
+{
+    margin-left: 2px;
+}
+.biography__nav {
+    list-style-type: none;
+}
+.biography-btn__link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    width: 200px;
+    color: #42c323;
+
+    text-decoration: none;
+
+    background-color: #322d85;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 2px 4px;
+
+    transition: background-color .2s linear;
+}
+.biography-btn__link:hover {
+    background-color: #ae1abe;
+    color: #37c69d;
+}
+.biography__article p{
+    font-size: 1.2em;
+}
+.biography__article h2 {
+    font-size: 2em;
+}
+.biography-article__basic{
+    border: 1px solid black;
+    background-color: #cccccc;
+}
+.biography-article__child{
+    border: 1px solid black;
+    background-color: #a0a0a0;
+    color: #2f45b1;
+}
+.biography-article__school{
+    border: 1px solid black;
+    background-color: #707070;
+    color: #d4c120;
+}
+.biography-article__afterSchool{
+    border: 1px solid black;
+    background-color: #5b5b5b;
+    color: #10e52b;
+}
+.biography-article__university{
+    border: 1px solid black;
+    background-color: #3c3c3c;
+    color: #fff;
+}
+.biography-back-content__link {
+    font-weight: bold;
+    text-decoration: none;
+}
+.biography-back-content__link:hover {
+    text-decoration: underline;
+}
+
+.biography-back-top__link {
+    text-transform: uppercase;
+}
+
+/* Novadays
+******************************/
+.novadays__title, .novadays__subtitle {
+    text-align: center;
+}
+.novadays__title {
+    font-size: 22px;
+}
+.novadays__all-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.novadays__list {
+    width: 50%;
+}
+.novadays__ul-list li:nth-child(odd) {
+    background-color: #ccc;
+}
+.novadays__ol-list li:nth-of-type(3) {
+    cursor: pointer;
+}
+.novadays__ol-list li:nth-of-type(5) {
+    cursor: pointer;
+}
+.novadays__ol-list li:nth-of-type(4) {
+    background-color: #524f94;
+    color: #d4c120;
+}
+
+/* Friends
+******************************/
+.friends__title {
+    text-align: center;
+    font-size: 22px
+}
+.friends__subtitle {
+    text-align: center;
+}
+.back__link {
+    font-style: italic;
+    text-decoration: none;
+}
+.friends__table {
+    border-collapse: revert;
+    border: 1px solid black;
+    text-align: center;
+}
+.friends__table th {
+    background-color: #55cf13;
+    color: #411f11;
+}
+.friends__table th, td{
+    border: 1px solid black;
+}
+.friends__table tr:nth-child(odd) {
+    background-color: #ccc;
+}
+.friends__table td:last-child {
+    text-align: right;
+}
+
+/* Gallery
+******************************/
+.gallery__title {
+    font-size: 20px;
+}
+.gallery h1, h2, h3 {
+    text-align: center;
+}
+.gallery__in-this-folder {
+    font-size: 80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.gallery__in-folder {
+    font-size: 100%;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+.gallery__online {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+.gallery__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery__item {
+    width: 31.333%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.gallery__image {
+    display: inline-block;
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* media
+******************************/
+@media (min-width: 993px) {
+    /* Friends */
+    .friends__table th {
+        font-size: 130%;
+    }
+    .friends__table td {
+        font-size: 120%;
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Index */
+    .index__link {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    /* Biography */
+    .biography__articles-item {
+        width: 49%;
+    }
+
+    /* Novadays */
+    .novadays__list {
+        width: 100%;
+    }
+
+    /* Friends */
+    .friends__table th {
+        font-size: 120%;
+    }
+    .friends__table td {
+        font-size: 110%;
+    }
+
+    /* Gallery */
+    .gallery__item {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Index */
+    .index__link {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Biography */
+    .biography__articles-item {
+        width: 100%;
+    }
+
+    /* Novadays */
+    .novadays__list {
+        width: 100%;
+    }
+
+    /* Friends */
+    .friends__table th {
+        font-size: 110%;
+    }
+
+    /* Gallery */
+    .gallery__item {
+        width: 100%;
+    }
+
+}
