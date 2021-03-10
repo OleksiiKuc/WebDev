@@ -7,15 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Персональна сторінка</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .index__title {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .index__text {
+            font-size: 1.2em;
+        }
+        .index__link {
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            color: #7c79ce;
+            width: 25%;
+            /*margin-left: 10px;*/
+        }
+        /*.index__link::after {*/
+        /*    content: "";*/
+        /*    width: 0;*/
+        /*    height: 2px;*/
+        /*    background-color: #7c79ce;*/
+        /*    position: absolute;*/
+        /*    bottom: -5px;*/
+        /*    left: 0;*/
+        /*    z-index: 1;*/
+
+        /*    transition: width .4s linear;*/
+        /*}*/
+        .index__link:hover {
+            color: #524f94;
+        }
+        .index__link:visited {
+            color: #246f72;
+        }
+    </style>
 </head>
 <body>
     <h1 class="index__title">Персональна сторінка Кучер Олексій Степанович</h1>
     <p class="index__text">Мені 20 років. Проживаю в селищі Нова Каховка Івано-Франківської області. На даний момент навчаюсь в Прикарпатському
     Національному Універститеті імені Василя Стефаника на 3 курсі спеціальності Комп'ютерні науки. Маю невеликий заробіток
     в Новій Енергії монтуючи відео в Premier Pro, та обробляючи фото.</p>
-    <a class="index__link" href="biography.html">Автобіографія</a>
-    <a class="index__link" href="novadays.html">Сьогодення</a>
-    <a class="index__link" href="friends.html">Друзі</a>
-    <a class="index__link" href="gallery.html">Галерея</a>
+    <div class="index__nav">
+        <a class="index__link" href="biography.html">Автобіографія</a>
+        <a class="index__link" href="novadays.html">Сьогодення</a>
+        <a class="index__link" href="friends.html">Друзі</a>
+        <a class="index__link" href="gallery.html">Галерея</a>
+    </div>
 </body>
 </html>
