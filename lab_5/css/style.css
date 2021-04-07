@@ -71,7 +71,7 @@
 }
 .biography__articles-item {
     margin-bottom: 10px;
-    width: 33%;
+
 }
 .biography__nav {
     list-style-type: none;
@@ -155,7 +155,7 @@
     margin-top: 20px;
 }
 .novadays__list {
-    width: 50%;
+
 }
 .novadays__ul-list li:nth-child(odd) {
     background-color: #ccc;
