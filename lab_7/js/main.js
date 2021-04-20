@@ -10,10 +10,10 @@ function info() {
 }
 function triangle(argument_1, type_1, argument_2, type_2) {
     var a, b, c, alpha, beta;
-    type_1 = document.getElementById("type_1").value;
-    type_2 = document.getElementById("type_2").value;
-    argument_1 = document.getElementById("argument_1").value;
-    argument_2 = document.getElementById("argument_2").value;
+    // type_1 = document.getElementById("type_1").value;
+    // type_2 = document.getElementById("type_2").value;
+    // argument_1 = document.getElementById("argument_1").value;
+    // argument_2 = document.getElementById("argument_2").value;
     if(type_1 == "leg" && type_2 == "leg") {
         a = argument_1;
         b = argument_2;
@@ -88,10 +88,10 @@ info();
 $('.button').on('click', function () {
     console.log(triangle());
 });
-// console.log(triangle(7, "leg", 40, "hypotenuse"));
-// console.log(triangle(22, "leg", 9, "hypotenuse"));
-// console.log(triangle(50, "hypotenuse", 10, "angle"));
-// console.log(triangle(2, "leg", 60, "opposite angle"));
+console.log(triangle(7, "leg", 40, "hypotenuse"));
+console.log(triangle(22, "leg", 9, "hypotenuse"));
+console.log(triangle(50, "hypotenuse", 10, "angle"));
+console.log(triangle(2, "leg", 60, "opposite angle"));
 
 
 
