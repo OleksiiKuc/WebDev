@@ -64,7 +64,7 @@ function triangle(argument_1, type_1, argument_2, type_2) {
     if (argument_1 <= 0 || argument_2 <= 0) {
         return "Zero or negative input";
     }
-    if(type_1 == "leg" && type_2 == "hypotenuse" && argument_1 <= argument_2 || type_2 == "leg" && type_1 == "hypotenuse" && argument_2 <= argument_1) {
+    if(type_1 == "leg" && type_2 == "hypotenuse" && argument_1 >= argument_2) {
         return "Zero or negative input";
     }
     if(argument_1 > 90 || argument_2 > 90) {
@@ -78,6 +78,10 @@ function triangle(argument_1, type_1, argument_2, type_2) {
 $('.button').on('click', function () {
     console.log(triangle());
 });
+// console.log(triangle(7, "leg", 40, "hypotenuse"));
+// console.log(triangle(22, "leg", 9, "hypotenuse"));
+// console.log(triangle(50, "hypotenuse", 10, "angle"));
+// console.log(triangle(2, "leg", 60, "opposite angle"));
 
 
 
