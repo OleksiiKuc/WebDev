@@ -1,3 +1,13 @@
+function info() {
+    console.log("Інструкція з використання");
+    console.log("Позначення - " + "Що позначає");
+    console.log("leg - " + "катет");
+    console.log("hypotenuse - " + "гіпотенуза");
+    console.log("adjacent angle  - " + "прилеглий до катета кут");
+    console.log("opposite angle  - " + "протилежний до катета кут");
+    console.log("angle - " + "один з двох гострих кутів(коли задана гіпотенуза");
+    console.log("");
+}
 function triangle(argument_1, type_1, argument_2, type_2) {
     var a, b, c, alpha, beta;
     type_1 = document.getElementById("type_1").value;
@@ -74,7 +84,7 @@ function triangle(argument_1, type_1, argument_2, type_2) {
     return "a = " + a + "\nb = " + b + "\nc = " + c + "\nalpha = " + alpha + "\nbeta = " + beta + "\nsuccess!";
 
 }
-
+info();
 $('.button').on('click', function () {
     console.log(triangle());
 });
