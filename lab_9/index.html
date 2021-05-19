@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Ajax</title>
@@ -15,73 +16,22 @@
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__list-item">
-                    <a href="#" class="menu__list-link">Home</a>
+                    <a href="#" onclick="$ns.loadCatalogCategories();" class="menu__list-link">Home</a>
                 </li>
                 <li class="menu__list-item">
-                    <a href="#" class="menu__list-link">Catalog</a>
+                    <a href="#" onclick="$ns.loadCatalogCategories();" class="menu__list-link">Catalog</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="main__content">
-        <div class="container">
-            <div class="main__inner">
-                <div class="main__category">
-                    <div class="main__category-item">
-                        <a href="#" class="main__category-link">
-                            <img src="http://place-hold.it/350x350" alt="catalog" class="main__category-img">
-                            <h2 class="main__category-name">Category-1</h2>
-                        </a>
-                    </div>
-                    <div class="main__category-item">
-                        <a href="#" class="main__category-link">
-                            <img src="http://place-hold.it/350x350" alt="catalog" class="main__category-img">
-                            <h2 class="main__category-name">Category-2</h2>
-                        </a>
-                    </div>
-                    <div class="main__category-item">
-                        <a href="#" class="main__category-link">
-                            <img src="http://place-hold.it/350x350" alt="catalog" class="main__category-img">
-                            <h2 class="main__category-name">Category-3</h2>
-                        </a>
-                    </div>
-                    <div class="main__category-item">
-                        <a href="#" class="main__category-link">
-                            <img src="http://place-hold.it/350x350" alt="catalog" class="main__category-img">
-                            <h2 class="main__category-name">Category-4</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main class="main__content container" id="main__content">
     </main>
 
-
-    <!-- <div class="main__item">
-        <img src="http://placehold.it/200" alt="" class="main__item-img"></img>
-        <h2 class="main__item-title"></h2>
-        <p class="main__item-desc"></p>
-        <div class="main__item-price"></div>
-    </div>
-    <div class="main__item">
-        <img src="" alt="" class="main__item-img"></img>
-        <h2 class="main__item-title"></h2>
-        <p class="main__item-desc"></p>
-        <div class="main__item-price"></div>
-    </div>
-    <div class="main__item">
-        <img src="" alt="" class="main__item-img"></img>
-        <h2 class="main__item-title"></h2>
-        <p class="main__item-desc"></p>
-        <div class="main__item-price"></div>
-    </div>
-    <div class="main__item">
-        <img src="" alt="" class="main__item-img"></img>
-        <h2 class="main__item-title"></h2>
-        <p class="main__item-desc"></p>
-        <div class="main__item-price"></div>
-    </div> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
