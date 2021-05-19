@@ -28,8 +28,8 @@ function Task_3() {
   var names = ["Bill", "John", "Jen", "Jason", "Paul", "Frank", "Steven", "Larry", "Paula", "Laura", "Jim"];
   console.log("%cЯкщо сума літер імен менша за 5.", "color: green;");
   for(var item in names) {
-    var splitNames = names[item].split('');
-    console.log("сума літер: " + splitNames.length);
+    var splitNames = names[item].split("");
+    console.log("сума літер: " + splitNames + " = " + splitNames.length);
     if(splitNames.length < 5) {
       speakBye(names[item]);
     } else {
