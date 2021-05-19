@@ -18,10 +18,10 @@ for(var item in names) {
   }
 }
 
-console.log("%cЯкщо сума ASCII-кодів літер імен менша за 5.", "color: green;");
+console.log("%cЯкщо сума літер імен менша за 5.", "color: green;");
 for(var item in names) {
   var splitNames = names[item].split('');
-  console.log("сума ASCII-кодів літер: " + splitNames.length);
+  console.log("сума літер: " + splitNames.length);
   if(splitNames.length < 5) {
     speakBye(names[item]);
   } else {
