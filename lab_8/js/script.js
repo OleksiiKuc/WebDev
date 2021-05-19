@@ -1,4 +1,4 @@
-(function speakForPeople() {
+(function () {
   var names = ["Bill", "John", "Jen", "Jason", "Paul", "Frank", "Steven", "Larry", "Paula", "Laura", "Jim", "Anna"];
   var byeSpeak = speakBye();
   var helloSpeak = speakHello();
