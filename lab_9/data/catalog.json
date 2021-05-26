@@ -1,0 +1,35 @@
+[{
+    "id": 1,
+    "short_name": "A",
+    "name": "Category-1",
+    "notes": "Hello it's category-1",
+    "url": "data/categories/A.json"
+},
+{
+    "id": 2,
+    "short_name": "B",
+    "name": "Category-2",
+    "notes": "Hello it's category-2",
+    "url": "data/categories/B/B.json"
+},
+{
+    "id": 3,
+    "short_name": "C",
+    "name": "Category-3",
+    "notes": "Hello it's category-3",
+    "url": "data/categories/C/C.json"
+},
+{
+    "id": 4,
+    "short_name": "D",
+    "name": "Category-4",
+    "notes": "Hello it's category-4",
+    "url": "data/categories/D/D.json"
+},
+{
+    "id": 5,
+    "short_name": "SP",
+    "name": "Category-SP",
+    "notes": "Hello it's category-4",
+    "url": "data/categories/SP/SP.json"
+}]

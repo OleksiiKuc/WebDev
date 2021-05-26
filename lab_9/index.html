@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Ajax</title>
@@ -16,21 +17,25 @@
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__list-item">
-                    <a href="#" onclick="$ns.loadCatalogCategories();" class="menu__list-link">Home</a>
+                    <a href="#" onclick="$ns.loadHome();" class="menu__list-link" id="menu__list-linkHome">Home</a>
                 </li>
                 <li class="menu__list-item">
-                    <a href="#" onclick="$ns.loadCatalogCategories();" class="menu__list-link">Catalog</a>
+                    <a href="#" onclick="$ns.loadCatalogCategories();" class="menu__list-link" id="menu__list-linkCatalog">Catalog</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="main__content container" id="main__content">
-    </main>
+    <section class="main__content container" id="main__content"></section>
+
+    <footer>
+
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/ajax-utils.js"></script>
     <script src="js/main.js"></script>
 </body>
