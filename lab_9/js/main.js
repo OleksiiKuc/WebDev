@@ -1,5 +1,17 @@
+(function() {
+
+    $('.main__slider').slick({
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        prevArrow: '<button class="slick-btn slick-prev"><img src="images/Arrow-left.svg" alt="prev"></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="images/Arrow-right.svg" alt="next"></button>',
+    });
+})();
+
 (function(global){
-    
+
+
     var ns = {};
 
     var homeHtml = "snippets/home-snippet.html";
@@ -18,7 +30,7 @@
 
     var showLoading = function(selector) {
         var html = "<div class='text-center'>";
-        html += "<img src='../images/ajax-loader.gif' alt='loading'></div>";
+        html += "<img src='images/ajax-loader.gif' alt='loading'></div>";
         insertHtml(selector, html);
     };
 
@@ -176,17 +188,14 @@
             }
         };
 
+        ns.loadRandom = function (categoryShort) {
+            showLoading("#main__content");
+
+            var randomCategoriesJSON = ["A", "B", "C", "D"].find((_, i, ar) => Math.random() < 1 / (ar.length - i));//ES6
+            $ajaxUtils.sendGetRequest(catalogItemsUrl + randomCategoriesJSON + ".json", buildAndShowCatalogItemsHTML);
+        };
+
     global.$ns = ns;
+
 })(window);
 
-$(function(){
-
-    $('.main__slider').slick({
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        prevArrow: '<button class="slick-btn slick-prev"><img src="images/Arrow-left.svg" alt="prev"></button>',
-        nextArrow: '<button class="slick-btn slick-next"><img src="images/Arrow-right.svg" alt="next"></button>'
-      });
-
-});

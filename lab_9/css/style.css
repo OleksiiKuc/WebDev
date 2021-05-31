@@ -105,13 +105,8 @@ a {
     outline: none;
 }
 
-.main__items {
-    display: flex;
-
-}
-
 .main__item {
-    margin: 0 auto;
+    text-align: center;
 }
 
 /* Category */
@@ -176,6 +171,7 @@ a {
     margin: 0 auto;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .product__item-title {
@@ -201,5 +197,15 @@ a {
     border: 1px solid black;
     width: 200px;
     height: 200px;
+    margin: 0 auto;
 }
 /* End Product */
+
+.carousel-control-prev {
+    background-color: black;
+}
+
+.carousel-control-next {
+    background-color: black;
+}
+
